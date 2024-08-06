@@ -20,6 +20,8 @@ if "%~2"=="" (
 )
 
 :: Wait for the specified number of seconds
+
+echo %message%
 timeout /t %seconds% /nobreak
 
 :: Display the alert message
