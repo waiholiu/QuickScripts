@@ -31,3 +31,8 @@ It will remind you in 5 minutes to email the client back.
 
 
 
+## New Folder
+
+Type "newfolder" and it'll create a new folder in the quickrepos directory then boots up VS Code so you can start working on it. Good for quickly cloning repos off github.
+
+Reminder to set the base directory in the script.

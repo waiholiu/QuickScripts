@@ -28,7 +28,8 @@ timeout /t %seconds% /nobreak
 msg * "%message%"
 
 :: Optionally, you can also use a sound alert
-:: powershell -c (New-Object Media.SoundPlayer "C:\Windows\Media\notify.wav").PlaySync();
+powershell -c (New-Object Media.SoundPlayer "C:\Windows\Media\notify.wav").PlaySync();
+
 
 :end
 :: Wait for user input to exit
