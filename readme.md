@@ -36,3 +36,12 @@ It will remind you in 5 minutes to email the client back.
 Type "newfolder" and it'll create a new folder in the quickrepos directory then boots up VS Code so you can start working on it. Good for quickly cloning repos off github.
 
 Reminder to set the base directory in the script.
+
+
+## Find Git Remote
+
+This will essentially search all sub directories in the current directory and find all git repos with a remote url that matches the search term
+
+Eg.  findGitRemote.ps1 "quick" "C:\Users\wailiu\Source\repos" will return  C:\Users\wailiu\Source\repos\QuickScripts
+
+If no directory is specified it'll use the current directory. So you can go findGitRemote.ps1 "quick"
