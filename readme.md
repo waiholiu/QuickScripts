@@ -45,3 +45,8 @@ This will essentially search all sub directories in the current directory and fi
 Eg.  findGitRemote.ps1 "quick" "C:\Users\wailiu\Source\repos" will return  C:\Users\wailiu\Source\repos\QuickScripts
 
 If no directory is specified it'll use the current directory. So you can go findGitRemote.ps1 "quick"
+
+## findGitNoRemote.ps1
+
+like FindGitRemote, but it'll return all the git repos with no remotes attached
+
