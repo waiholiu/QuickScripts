@@ -30,6 +30,16 @@ powershell -Command "Invoke-WebRequest -Uri 'https://raw.githubusercontent.com/g
 :: Notify the user about the downloaded file
 echo Downloaded .gitignore to %newdir%
 
+:: Create readme.md file
+(
+echo # What is this repo for?
+echo.
+echo Remove this tag #descNeeded8342983742 after entering a description
+) > "%newdir%\readme.md"
+
+:: Notify the user about the readme.md file
+echo Created readme.md in %newdir%
+
 :: Initialize a new Git repository
 cd "%newdir%"
 git init
@@ -37,11 +47,11 @@ git init
 :: Notify the user about the Git repository initialization
 echo Initialized empty Git repository in %newdir%
 
-:: Stage the .gitignore file
-git add .gitignore
+:: Stage the .gitignore and readme.md files
+git add .gitignore readme.md
 
-:: Commit the .gitignore file
-git commit -m "Initial commit with .gitignore"
+:: Commit the files
+git commit -m "Initial commit with .gitignore and readme.md"
 
 :: Notify the user about the first commit
 echo First commit done
